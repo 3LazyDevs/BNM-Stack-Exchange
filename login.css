@@ -1,0 +1,28 @@
+body
+{
+	background-color: #000;
+}
+.form
+{
+	color: #fff;
+	margin: auto;
+	margin-top: 170px;
+	padding: 50px;
+	text-align: center;
+	display: flex;	
+	width: fit-content;
+	border: #222 3px solid;
+	border-radius: 20px;
+	background-color:#1b1b32;
+	box-shadow: 5px 5px 5px #333;
+}
+.link
+{
+    text-align: center;
+	color: #fff;
+}
+.space
+{
+	padding: 10px;
+}
+

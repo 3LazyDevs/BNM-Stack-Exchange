@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>BNM Stack Exchange</display-name>
+  <absolute-ordering></absolute-ordering>
+  <servlet>
+  	<servlet-name>login</servlet-name> 
+  	<servlet-class>login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>login</servlet-name>
+  <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>signup</servlet-name> 
+  	<servlet-class>signup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>signup</servlet-name>
+  <url-pattern>/SignupServlet</url-pattern>
+  </servlet-mapping>
+ 
+   <servlet>
+  	<servlet-name>cse</servlet-name> 
+  	<servlet-class>cse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>cse</servlet-name>
+  <url-pattern>/CseQuestion</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+  	<servlet-name>cse_home</servlet-name> 
+  	<servlet-class>cse_home</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>cse_home</servlet-name>
+  <url-pattern>/CseHome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>cse_view</servlet-name> 
+  	<servlet-class>cse_view</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>cse_view</servlet-name>
+  <url-pattern>/CseView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>cse_ans</servlet-name> 
+  	<servlet-class>cse_ans</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>cse_ans</servlet-name>
+  <url-pattern>/CseAns</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
