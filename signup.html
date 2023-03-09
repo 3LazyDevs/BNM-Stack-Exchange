@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel = "stylesheet" href = "signup.css">
+    <link rel="stylesheet" href="signup.css">
 </head>
+
 <body>
-<div class = "form">
-<form name="SignupForm" method="post" action="SignupServlet">
-<span class = "email">Email id: <input type="email" name="email" required/><br/></span>
-<span class = "email">Username: <input type="text" name="username" required/> <br/></span>
-<span class = "email">Password: <input type="password" name="password" required/> <br/></span>
-<span class = "email">Re-enter Password: <input type = "password" name = "repassword" required/> <br/></span>
-<input type="submit" value="Sign up" />
-</form>
-</div>
+    <div class="form">
+        <form name="SignupForm" method="post" action="SignupServlet">
+
+            <span class="email">Email id: 
+                <input id="email" type="email" name="email" required /><br /></span>
+
+            <span class="username">Username: 
+                <input id="username" type="text" name="username" required /> <br /></span>
+
+            <span class="password">Password: 
+                <input id="password" type="password" name="password" required /> <br /></span>
+
+            <span class="re-enter">Re-enter Password: 
+                <input id="re-password" type="password" name="repassword" required /> <br /></span>
+
+            <input id="signup" type="submit" value="Sign up" />
+        </form>
+    </div>
 </body>
+
 </html>
