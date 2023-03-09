@@ -1,19 +1,21 @@
 body
 {
-	background-color: #000;
+	background-color: #2C3333;
+    display: flex;	
+    justify-content: center;
+    align-items: center;
 }
 .form
 {
-	color: #fff;
+	color: #2C3333;
 	margin: auto;
 	margin-top: 170px;
 	padding: 50px;
 	text-align: center;
-	display: flex;	
 	width: fit-content;
 	border: #222 3px solid;
 	border-radius: 20px;
-	background-color:#1b1b32;
+	background-color:#CBE4DE;
 	box-shadow: 5px 5px 5px #333;
 }
 .link
@@ -26,3 +28,34 @@ body
 	padding: 10px;
 }
 
+span{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#username{
+    margin-left: 10px;
+}
+
+#password{
+    margin-left: 20px;
+}
+
+input{
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#login{
+    margin-left: 8px;
+    width:60px;
+    height:37px;
+    padding:7px;
+    font-size: medium;
+    cursor: pointer;
+}
+a, p{
+    margin-left: 3px;
+    color:#2C3333;
+}
