@@ -1,5 +1,175 @@
-body
-{
-    background: linear-gradient(90deg,);
-    
+body {
+    background-color: #000;
+    color: #fff;
+    margin-left: 150px;
+
 }
+
+.rod {
+    border-left-width: 20px;
+    border-left-style: solid;
+    border-image: linear-gradient(to bottom, yellow, #ff8000, red) 1;
+}
+
+.logo {
+    background: green;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    text-align: center;
+    font-size: 140%;
+    float: left;
+    animation-name: logo;
+    animation-duration: 4s;
+}
+
+.diamond1 {
+    background: green;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    transform: rotate(45deg);
+    animation-name: logo;
+    animation-duration: 4s;
+}
+
+.diamond2 {
+    background: green;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    transform: rotate(45deg);
+    animation-name: logo;
+    animation-duration: 4s;
+}
+
+.diamond3 {
+    background: green;
+    width: 5px;
+    height: 5px;
+    position: relative;
+    transform: rotate(45deg);
+    animation-name: logo;
+    animation-duration: 4s;
+}
+
+.diamond4 {
+    background: green;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    transform: rotate(45deg);
+    animation-name: logo;
+    animation-duration: 4s;
+    float: right;
+}
+
+.diamond5 {
+    background: green;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    transform: rotate(45deg);
+    animation-name: logo;
+    animation-duration: 4s;
+    float: right;
+}
+
+.diamond6 {
+    background: green;
+    width: 5px;
+    height: 5px;
+    position: relative;
+    transform: rotate(45deg);
+    animation-name: logo;
+    animation-duration: 4s;
+    float: right;
+}
+
+.header {
+    text-align: center;
+    font-size: 180%;
+    max-width: 1000px
+}
+
+.text {
+    padding-bottom: 500px;
+    text-align: justify;
+    padding-left: 125px;
+    padding-right: 500px;
+    font-size: 120%;
+}
+
+.big {
+    text-align: left;
+    font-size: 240%;
+}
+
+.about,
+.features {
+    text-align: center;
+}
+
+@keyframes logo {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 0px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+a {
+    border: 2px solid #8b6845;
+    padding: 10px;
+    color: #000;
+    background-color: #ff8000;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #dcb620;
+}
+
+li, .info
+{
+    font-size: larger;
+}
+
