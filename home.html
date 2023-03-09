@@ -1,9 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel = "stylesheet" href = "home.css">
+    <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
- <a href = "http://localhost:8080/BNM_Stack_Exchange/CseHome">CSE-></a>
+    <a href="http://localhost:8080/BNM_Stack_Exchange/CseHome">CSE></a>
+    <div class="header">
+        <div class="logo">?</div>
+        <h1>BNM STACK EXCHANGE</h1>
+    </div>
+    <div class="diamond1"></div>
+    <div class="diamond2"></div>
+    <div class="diamond3"></div>
+    <div class="diamond4"></div>
+    <div class="diamond5"></div>
+    <div class="diamond6"></div>
+    <div class="rod">
+        <div class="about"></div>
+
+        <div class="text hidden">
+
+            <p class="info">
+                <div class="big">
+                    <p>
+                        Who are we?
+                    </p>
+                </div>
+                BNM STACK EXCHANGE is a student friendly project that all is open for all BNMIT students.
+                This platform is built to enable students to form a community where they can share their difficulties
+                and can get solutions from their peers or their faculty members.
+            </p>
+        </div>
+        <p id="demo"></p>
+        <div class="text">
+            <div class="big hidden">
+                <p>
+                    What do we at BNM STACK EXCHANGE offer?
+                </p>
+            </div>
+            <ul>
+                <li class="hidden">
+                    Ask questions and receive relevent answers from your peers and seniors
+                </li >
+                <li class="hidden">
+                    Keep a track of all the questions you have asked so far.
+                </li>
+                <li class="hidden">
+                    Show the <code>code</code> where you are facing problems.
+                </li>
+            </ul>
+        </div>
+        <div class="hidden"></div>
+    </div>
+
+    <script>
+        const observer = new IntersectionObserver((items) => {
+            items.forEach((item) => {
+                if (item.isIntersecting) {
+                    item.target.classList.add("show");
+                }
+                else {
+                    item.target.classList.remove("show");
+                }
+            })
+        })
+        const hiddenItems = document.querySelectorAll(".hidden");
+        hiddenItems.forEach((item) => {
+            observer.observe(item);
+        })
+    </script>
 </body>
+
 </html>
