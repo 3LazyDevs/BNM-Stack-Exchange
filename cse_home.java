@@ -53,7 +53,7 @@ public class cse_home extends HttpServlet
 			int i = 0;
 			rs = stmt.getResultSet();
 			//rs.first();
-			out.print("<table border = '1'>");
+			out.print("<head><link rel='stylesheet' href='cse_home(java).css'></head><table border = '1'>");
 			while(rs.next() && i < 5) 
 			{
 				String name = rs.getString("username");
