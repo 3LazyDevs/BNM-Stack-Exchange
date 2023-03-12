@@ -9,7 +9,7 @@
     <a href="http://localhost:8080/BNM_Stack_Exchange/CseHome">CSE></a>
     <div class="header">
         <div class="logo">?</div>
-        <h1>BNM STACK EXCHANGE</h1>
+        <h1 class="hidden">BNM STACK EXCHANGE</h1>
     </div>
     <div class="diamond1"></div>
     <div class="diamond2"></div>
@@ -22,17 +22,41 @@
 
         <div class="text hidden">
 
-            <p class="info">
-                <div class="big">
-                    <p>
-                        Who are we?
-                    </p>
-                </div>
-                BNM STACK EXCHANGE is a student friendly project that all is open for all BNMIT students.
-                This platform is built to enable students to form a community where they can share their difficulties
-                and can get solutions from their peers or their faculty members.
+            <p class="info hidden">
+            <div class="big">
+                <p>
+                    Who are we?
+                </p>
+            </div>
+            BNM STACK EXCHANGE is a student friendly project that all is open for all BNMIT students.
+            This platform is built to enable students to form a community where they can share their difficulties
+            and can get solutions from their peers or their faculty members.
             </p>
         </div>
+        <section>
+            <h3 class="hidden question-text">Q) How to Swap 2 numbers in C language</h3><br>
+
+            <textarea class="hidden hidden-text answer-text code-section">
+                Answer : 
+                <!-- Here the code will be written -->
+            </textarea>
+            <textarea class="code-text">
+                #include <stdio.h>
+                int main() {    
+                
+                    int number1, number2, sum;
+                    
+                    printf("Enter two integers: ");
+                    scanf("%d %d", &number1, &number2);
+                
+                    // calculate the sum
+                    sum = number1 + number2;      
+                    
+                    printf("%d + %d = %d", number1, number2, sum);
+                    return 0;
+                }
+            </textarea>
+        </section>
         <p id="demo"></p>
         <div class="text">
             <div class="big hidden">
@@ -43,7 +67,7 @@
             <ul>
                 <li class="hidden">
                     Ask questions and receive relevent answers from your peers and seniors
-                </li >
+                </li>
                 <li class="hidden">
                     Keep a track of all the questions you have asked so far.
                 </li>
@@ -52,10 +76,12 @@
                 </li>
             </ul>
         </div>
+
         <div class="hidden"></div>
     </div>
 
     <script>
+        // For Sliding Effect
         const observer = new IntersectionObserver((items) => {
             items.forEach((item) => {
                 if (item.isIntersecting) {
@@ -70,6 +96,20 @@
         hiddenItems.forEach((item) => {
             observer.observe(item);
         })
+
+        // Auto-Typing effect
+
+        const text = document.querySelector(".code-text").innerHTML;
+        document.querySelector(".code-text").classList.add("hide-code-text");
+        let index = 0;
+        function type() {
+            const output = document.querySelector(".answer-text");
+            output.innerHTML = text.slice(0, ++index);
+            setTimeout(type, 2);
+        }
+        type();
+
+
     </script>
 </body>
 
