@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C3333;
+
+}
+
+form{
+    background-color: #2C3333;
+    display:flex;
+    width: 80%;
+    flex-wrap: wrap;
+}
+textarea{
+    width:45%;
+    height: 90%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+input{
+    margin-top: 20px;
+    padding: 7px;
+}
+
+#ta1{
+    margin: 2%;
+}
+
+
+#ta2{
+    margin: 2%;
+}
+
+section{
+    display:flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 500px;
+}
+.outside-form{
+    margin-left: 10px;
+    margin: 33px;
+}
