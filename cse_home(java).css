@@ -1,0 +1,30 @@
+html{
+    background-color: #2C3333;
+}
+table {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-collapse: collapse;
+}
+td{
+    border: none;
+    resize: none;
+}
+input[type="submit"]{
+    background-color: #CBE4DE;
+    color: #2C3333;
+    font-weight: 600;
+    padding:10px 20px;
+}
+
+td textarea{
+    background-color: #CBE4DE;
+    min-width :400px;
+    min-height:500px;
+    max-width :400px;
+    max-height:900px;
+    border: 0px 50px;
+
+}
