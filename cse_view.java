@@ -73,16 +73,14 @@ public class cse_view extends HttpServlet
 		Path fileName2 = Path.of(codepath);
 		String des = Files.readString(fileName1);
 		String code = Files.readString(fileName2);
+		String loremIpsum = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A adipisci modi veritatis vero doloribus beatae maiores dolore itaque consectetur, laudantium sit corrupti illum aspernatur molestiae, veniam natus rerum expedita error!";
 		PrintWriter out = response.getWriter();
-		out.println("<html>"
-				+ "<body>");
-		out.println("<textarea cols = '50' rows = '25' name = 'description' readonly>" + des + "</textarea><br>"
-				    +"<textarea cols = '30' rows = '10' name = 'code' readonly>" + code + "</textarea>");
+		out.println("<html>" + "<head><link rel='stylesheet' href='cse_view.css'></head><body>");
+		out.println("<section><textarea cols = '50' rows = '25' name = 'description' readonly>" + loremIpsum + "</textarea><br>"
+				    + "<textarea cols = '30' rows = '10' name = 'code' readonly>" + loremIpsum + "</textarea></section>");
 		out.println("<form name=\"CSEans\" method=\"post\" action=\"CseAns\">\r\n"
-				+ "<textarea cols = 50, rows = 25, name = \"answer-des\" placeholder = \"Enter the answer\" required>\r\n"
-				+ "</textarea><br>\r\n"
-				+ "<textarea cols = 50, rows = 25, name = \"answer-code\" placeholder = \"Enter the code if required else type NA\" required>\r\n"
-				+ "</textarea><br>\r\n"
+				+ "<textarea id='ta1' cols = 50, rows = 25, name = \"answer-des\" placeholder = \"Enter the answer\" required>\r\n" + "</textarea><br>\r\n"
+				+ "<textarea id='ta2'cols = 50, rows = 25, name = \"answer-code\" placeholder = \"Enter the code if required else type NA\" required>\r\n" + "</textarea><br>\r\n"
 				+ "<textarea name = 'des-path' hidden>" + despath + "</textarea>"
 				+ "<textarea name = 'code-path' hidden>" + codepath + "</textarea>"
 				+ "<input type=\"submit\" value=\"POST\" />\r\n"
